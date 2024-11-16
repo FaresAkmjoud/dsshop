@@ -1,0 +1,158 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* الخلفية العامة */
+    color: #fff; /* لون النص */
+    height: 100%;
+    background: url('background.gif') no-repeat center center fixed; /* تطبيق الخلفية المتحركة */
+    background-size: cover; /* تجعل الخلفية تغطي الصفحة بالكامل */
+}
+
+/* إزالة الخط أسفل النص في الرابط */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    z-index: 1; /* التأكد أن المحتوى فوق الخلفية */
+}
+
+.hero nav {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.6); /* خلفية شفافة */
+    z-index: 2; /* التأكد أن الشريط العلوي فوق الخلفية */
+}
+
+.hero nav .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.hero nav .logo span {
+    color: #fff; /* اللون الخاص بـ Developer */
+}
+
+.hero nav .nav-links a {
+    margin: 0 10px;
+    font-size: 16px;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.hero nav .nav-links a:hover {
+    color: #4baffa;
+}
+
+/* Content */
+.hero .content {
+    position: relative;
+    z-index: 2; /* التأكد أن النص والمحتوى فوق الخلفية */
+}
+
+.hero .content img.profile-image {
+    width: 150px; /* حجم الصورة */
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.hero .content h1 {
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+.hero .content p {
+    font-size: 1.1rem;
+    color: #ccc;
+}
+
+/* Sections */
+section {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.05); /* خلفية شفافة للأقسام */
+    margin: 20px;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1; /* التأكد أن الأقسام ستكون فوق الخلفية */
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+section p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: #ccc;
+}
+
+/* Form */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    background-color: #111; /* خلفية سوداء للنصوص */
+    color: #fff;
+    border: 1px solid #333;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #4baffa;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #3378b0;
+}
+
+/* Footer */
+footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 0.9rem;
+    position: relative;
+    z-index: 1;
+}
